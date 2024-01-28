@@ -1,8 +1,12 @@
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
+
 
 public class BasicTests {
     @BeforeMethod
@@ -15,9 +19,10 @@ public class BasicTests {
 
     }
 
-    @AfterMethod
-    public void tearDown(){
-        Basics obj = new Basics();
-        obj.stopService();
-    }
+//    @AfterMethod
+//    public void tearDown(){
+//        Basics obj = new Basics();
+//        obj.getDriver().quit();
+//        obj.getService().stop();
+//    }
 }
